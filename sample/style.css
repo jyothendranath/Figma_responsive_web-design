@@ -1,3 +1,73 @@
+
+
+/* media queries */
+
+
+@media only screen and (max-width: 960px){
+
+    .banner{
+        flex-direction: column;
+    }
+    .minibar-navigation{
+        margin: 0 1.2em;
+    }
+    .minibar-navigation, .minibar-nav-content{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .headinginfo, .headingimg-content, .personal-info, .names-banner, .photo-update-section, .fmt-outer-banner{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .minibar-navigation{
+        justify-content: space-between;
+    }   
+    .minibar-nav-content svg{
+        margin-right: 0.5em;
+    }
+    .minibar-nav-content h1{
+        color: #101828;
+        font-size: 1.5rem;
+    }
+    main, .update-form, .names-banner-form-element, .personal-info-content{
+        width: 100%;
+    }
+    .mini-minibar, .minibar{
+        display: none;
+    }
+    .headinginfo, .personal-info{
+        margin:0 1.5em;
+        margin-bottom: 0.8em;
+    }
+    #menu-icon{
+        padding: 0.3em;
+    }
+    #menu-icon:hover{
+        cursor: pointer;
+        background: rgb(226, 223, 223);
+    }
+    .profile-pic{
+        margin-left: -1.6em;
+        width: 180px;
+        height: 180px;
+    }
+    .verified-image{
+        top: 90px;
+        left: 111px;
+    }
+    .format-text-banner{
+        width: 100%;
+    }
+    .format-text-icons{
+        margin:1em 0;
+    }
+}
+
+
+
+
+
 body{
     margin: 0;
     padding: 0;
@@ -455,68 +525,4 @@ main{
 }
 .minibar:hover{
     display: flex;
-}
-
-/* media queries */
-
-
-@media only screen and (max-width: 960px){
-
-    .banner{
-        flex-direction: column;
-    }
-    .minibar-navigation{
-        margin: 0 1.2em;
-    }
-    .minibar-navigation, .minibar-nav-content{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-    }
-    .headinginfo, .headingimg-content, .personal-info, .names-banner, .photo-update-section, .fmt-outer-banner{
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    .minibar-navigation{
-        justify-content: space-between;
-    }   
-    .minibar-nav-content svg{
-        margin-right: 0.5em;
-    }
-    .minibar-nav-content h1{
-        color: #101828;
-        font-size: 1.5rem;
-    }
-    main, .update-form, .names-banner-form-element, .personal-info-content{
-        width: 100%;
-    }
-    .mini-minibar, .minibar{
-        display: none;
-    }
-    .headinginfo, .personal-info{
-        margin:0 1.5em;
-        margin-bottom: 0.8em;
-    }
-    #menu-icon{
-        padding: 0.3em;
-    }
-    #menu-icon:hover{
-        cursor: pointer;
-        background: rgb(226, 223, 223);
-    }
-    .profile-pic{
-        margin-left: -1.6em;
-        width: 180px;
-        height: 180px;
-    }
-    .verified-image{
-        top: 90px;
-        left: 111px;
-    }
-    .format-text-banner{
-        width: 100%;
-    }
-    .format-text-icons{
-        margin:1em 0;
-    }
 }
